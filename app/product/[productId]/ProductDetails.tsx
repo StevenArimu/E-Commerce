@@ -43,7 +43,6 @@ const ProductDetails: FC<ProductDetailsProps> = ({ product }) => {
     const { handleAddProductToCart, cartProducts } = useCart()
 
     const [isProductInCart, setIsProductInCart] = useState(false)
-    console.log("Products => ", cartProducts)
     const [cartProduct, setCartProduct] = useState<CartProductType>({
         id: product.id,
         name: product.name,
@@ -137,7 +136,7 @@ const ProductDetails: FC<ProductDetailsProps> = ({ product }) => {
                         <SetQuantity cartProduct={cartProduct} handleQtyIncrease={handleQtyIncrease} handleQtyDecrease={handleQtyDecrease} />
                         <Horizontal />
                         <div className="max-w-[3000px]">
-                            <Button label="Add To Cart" onClick={() => { handleAddProductToCart(cartProduct) }} outline />
+                            <Button label="Add To Cart" onClick={() => handleAddProductToCart(cartProduct)} />
                         </div>
                     </>
                 )}
