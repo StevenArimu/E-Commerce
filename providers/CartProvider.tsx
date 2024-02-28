@@ -9,11 +9,9 @@ interface CartProviderProps {
 
 const CartProvider: FC<CartProviderProps> = ({ children }) => {
     return (
-        <div>
-            <CartContextProvider>
-                {children}
-            </CartContextProvider>
-        </div>
+        <CartContextProvider>
+            {children}
+        </CartContextProvider>
     );
 }
 
