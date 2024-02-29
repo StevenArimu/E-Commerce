@@ -1,17 +1,18 @@
 import { FC } from "react";
-import { CartProductType } from "../product/[productId]/ProductDetails";
-import { formatPrice } from "@/utils/formatPrice";
 import Link from "next/link";
-import { turnCateText } from "@/utils/trunCateText";
 import Image from "next/image";
-import SetQuantity from "../components/products/SetQuantity";
-import { useCart } from "@/hooks/useCart";
 
+
+
+import { useCart } from "@/hooks/useCart";
+import { formatPrice } from "@/utils/formatPrice";
+import { turnCateText } from "@/utils/trunCateText";
+import SetQuantity from "../components/products/SetQuantity";
+import { CartProductType } from "../product/[productId]/ProductDetails";
 
 interface ItemContentPros {
     item: CartProductType
 }
-
 
 const ItemContent: FC<ItemContentPros> = ({ item }) => {
     const { handleRemoveProductFromCart, handelCartQtyIncrease, handelCartQtyDecrease } = useCart()

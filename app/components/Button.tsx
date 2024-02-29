@@ -1,9 +1,8 @@
 'use client'
 
-import { Icon } from "@mui/material";
 import { FC } from "react";
+import { Icon } from "@mui/material";
 import { IconType } from "react-icons";
-
 interface ButtonProps {
     label: string,
     disabled?: boolean,

@@ -1,6 +1,4 @@
 import { FC, ReactNode } from "react";
-
-
 interface FooterListProps {
     children: ReactNode
 }

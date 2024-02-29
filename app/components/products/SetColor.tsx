@@ -1,14 +1,13 @@
 'use client'
 
-import { CartProductType, SelectedImgType } from "@/app/product/[productId]/ProductDetails";
 import { FC } from "react";
 
+import { CartProductType, SelectedImgType } from "@/app/product/[productId]/ProductDetails";
 interface SetColorProps {
     images: SelectedImgType[],
     cartProduct: CartProductType,
     handleColorSelect: (value: SelectedImgType) => void
 }
-
 
 const SetColor: FC<SetColorProps> = ({ images, cartProduct, handleColorSelect }) => {
     return (

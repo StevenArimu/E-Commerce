@@ -1,4 +1,4 @@
-//I am changing the image links from firebase to amazon, firebase has issues with these direct links. Please remember to add the amazon link(that will show up at the error) instead of firebase at the cofig for it to work out.
+//I am changing the image links from firebase to amazon, firebase has issues with these direct links. Please remember to add the amazon link(that will show up at the error) instead of firebase at the config for it to work out.
 
 export const products = [
     {
@@ -27,12 +27,12 @@ export const products = [
     },
     {
         id: "64a4ebe300900d44bb50628a",
-        name: "Logitech MX Keys Advanced Wireless Illuminated Keyboard, Tactile Responsive Typing, Backlighting, Bluetooth, USB-C, Apple macOS, Microsoft Windows, Linux, iOS, Android, Metal Build (Black)",
+        name: "Logitech MX Keys Advanced Wireless Illuminated Keyboard, Tactile Responsive Typing, Back lighting, Bluetooth, USB-C, Apple macOS, Microsoft Windows, Linux, iOS, Android, Metal Build (Black)",
         description:
             "PERFECT STROKE KEYS - Spherically-dished keys match the shape of your fingertips, offering satisfying feedback with every tap\nCOMFORT AND STABILITY - Type with confidence on a keyboard crafted for comfort, stability, and precision",
         price: 102.99,
         brand: "logitech",
-        category: "Accesories",
+        category: "Accessories",
         inStock: true,
         images: [
             {
@@ -105,7 +105,7 @@ export const products = [
                 createdDate: "2023-06-26T15:53:44.483Z",
                 user: {
                     id: "6499b184b0e9a8c8709821d3",
-                    name: "Chaoo",
+                    name: "Cha oo",
                     email: "example1@gmail.com",
                     emailVerified: null,
                     image:
@@ -145,7 +145,7 @@ export const products = [
             "Cross computer control: Game changing capacity to navigate seamlessly on 3 computers, and copy paste text, images, and files from 1 to the other using Logitech flow\nDual connectivity: Use with upto 3 Windows or Mac computers via included Unifying receiver or Bluetooth Smart wireless technology. Gesture button- Yes",
         price: 70,
         brand: "logitech",
-        category: "Accesories",
+        category: "Accessories",
         inStock: true,
         images: [
             {
@@ -163,7 +163,7 @@ export const products = [
         description:
             'Bluetooth Call and Message Reminder: The smart watch is equipped with HD speaker, after connecting to your phone via Bluetooth, you can directly use the smartwatches to answer or make calls, read messages, store contacts, view call history. The smartwatch can set up more message notifications in "GloryFit" APP. You will never miss any calls and messages during meetings, workout and riding.',
         price: 50,
-        brand: "Nerunsa",
+        brand: "Ne run sa",
         category: "Watch",
         inStock: true,
         images: [

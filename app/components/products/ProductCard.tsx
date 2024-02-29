@@ -1,12 +1,12 @@
 'use client'
 
-import { turnCateText } from "@/utils/trunCateText";
 import Image from "next/image"
-import { formatPrice } from "@/utils/formatPrice";
 import { Rating } from "@mui/material";
-import { access } from "fs";
 import { useRouter } from "next/navigation";
+import { formatPrice } from "@/utils/formatPrice";
 
+import { access } from "fs";
+import { turnCateText } from "@/utils/trunCateText";
 interface ProductCardProps {
     data: any
 }
@@ -14,6 +14,7 @@ interface ProductCardProps {
 const ProductCard: React.FC<ProductCardProps> = ({ data }) => {
 
     const router = useRouter();
+
     const productRating = data.reviews.reduce((acc: number, item: any) => item.rating + acc, 0) / data.reviews.length
 
     return (

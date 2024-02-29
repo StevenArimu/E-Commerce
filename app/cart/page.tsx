@@ -1,7 +1,5 @@
-import Container from "../components/Container";
 import CartClient from "./CartClient";
-
-
+import Container from "../components/Container";
 
 const Cart = () => {
     return (

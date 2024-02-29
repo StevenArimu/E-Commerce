@@ -13,10 +13,11 @@ pnpm dev
 # or
 bun dev
 ```
+
 ## Tutorial Youtube
 https://www.youtube.com/watch?v=lbs7hABJ09o&list=PL63c_Ws9ecISwPzddQzQ671S_gzJA6M5z&index=21&ab_channel=ChaooCharles
 
-
+## start
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
