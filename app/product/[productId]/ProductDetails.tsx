@@ -1,42 +1,28 @@
 'use client'
 
 import { Rating } from "@mui/material";
-import { FC, useCallback, useState, useEffect } from "react";
-import SetColor from "@/app/components/products/SetColor";
-import SetQuantity from "@/app/components/products/SetQuantity";
-import Button from "@/app/components/Button";
-import ProductImage from "@/app/components/products/ProductImage";
-import { useCart } from "@/hooks/useCart";
-import { MdCheckCircle } from "react-icons/md";
 import { useRouter } from "next/navigation";
+import { MdCheckCircle } from "react-icons/md";
+import { FC, useCallback, useState, useEffect } from "react";
+
+
+
+import { useCart } from "@/hooks/useCart";
+import Button from "@/app/components/Button";
+import SetColor from "@/app/components/products/SetColor";
+import { CartProductType, SelectedImgType } from "@/types";
+import SetQuantity from "@/app/components/products/SetQuantity";
+import ProductImage from "@/app/components/products/ProductImage";
+
+
 
 interface ProductDetailsProps {
     product: any
 }
 
-
-export type CartProductType = {
-    id: string,
-    name: string,
-    description: string,
-    category: string,
-    brand: string,
-    selectedImg: SelectedImgType,
-    quantity: number,
-    price: number
-}
-
-
-export type SelectedImgType = {
-    color: string,
-    colorCode: string,
-    image: string
-}
-
 const Horizontal = () => {
     return <hr className="w-[30%] my-2" />
 }
-
 
 const ProductDetails: FC<ProductDetailsProps> = ({ product }) => {
     const router = useRouter();
@@ -62,7 +48,7 @@ const ProductDetails: FC<ProductDetailsProps> = ({ product }) => {
                 setIsProductInCart(true)
             }
         }
-    }, [cartProducts])
+    }, [cartProducts, product.id])
 
     const productRating = product.reviews.reduce((acc: number, item: any) => item.rating + acc, 0) / product.reviews.length
 
@@ -74,7 +60,7 @@ const ProductDetails: FC<ProductDetailsProps> = ({ product }) => {
         },
         [cartProduct.selectedImg]
     );
-
+    
     const handleQtyIncrease = useCallback(() => {
         if (cartProduct.quantity === 99) {
             return;
